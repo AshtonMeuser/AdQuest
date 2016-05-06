@@ -1,0 +1,699 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C03DAD531CA8FEFE008F88B3 /* AdMobHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03DAD521CA8FEFE008F88B3 /* AdMobHelper.swift */; };
+		C0B6B20A1CB2310900E6C3CA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B6B2091CB2310900E6C3CA /* CFNetwork.framework */; };
+		C0B6B20C1CB2311A00E6C3CA /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B6B20B1CB2311A00E6C3CA /* CoreFoundation.framework */; };
+		C0B6B20E1CB2315700E6C3CA /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B6B20D1CB2315700E6C3CA /* UnityAds.framework */; };
+		C0B6B2101CB2316100E6C3CA /* UnityAds.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C0B6B20F1CB2316100E6C3CA /* UnityAds.bundle */; };
+		C0B6B2121CB25BBF00E6C3CA /* UnityAdsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6B2111CB25BBF00E6C3CA /* UnityAdsHelper.swift */; };
+		C0C41FF71CAED0F600D835FF /* RadialGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C41FF61CAED0F600D835FF /* RadialGradient.swift */; };
+		C0F2A53E1CA6889200D03EF8 /* AdQuestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2A53D1CA6889200D03EF8 /* AdQuestHelper.swift */; };
+		C0F2A5401CA6889D00D03EF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2A53F1CA6889D00D03EF8 /* AppDelegate.swift */; };
+		C0F2A5421CA688AF00D03EF8 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2A5411CA688AF00D03EF8 /* Home.swift */; };
+		C0F2A5461CA688CF00D03EF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0F2A5451CA688CF00D03EF8 /* Assets.xcassets */; };
+		C0F2A5491CA688EC00D03EF8 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2A5481CA688EC00D03EF8 /* ProgressView.swift */; };
+		C0F2A54B1CA688F900D03EF8 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2A54A1CA688F900D03EF8 /* UserDefaultsHelper.swift */; };
+		C0F2A54D1CA688FF00D03EF8 /* ChartboostHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2A54C1CA688FF00D03EF8 /* ChartboostHelper.swift */; };
+		C0F2A5581CA689AA00D03EF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F2A5561CA689AA00D03EF8 /* Main.storyboard */; };
+		C0F2A55B1CA689BB00D03EF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F2A5591CA689BB00D03EF8 /* LaunchScreen.storyboard */; };
+		C0F2A5631CA68B0A00D03EF8 /* AdQuestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2A5621CA68B0A00D03EF8 /* AdQuestTests.swift */; };
+		C0F2A5711CA68B2200D03EF8 /* AdQuestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2A5701CA68B2200D03EF8 /* AdQuestUITests.swift */; };
+		C0F2A57E1CA8A93400D03EF8 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F2A57D1CA8A93400D03EF8 /* GoogleMobileAds.framework */; };
+		C0F2A5801CA8EA1400D03EF8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F2A57F1CA8EA1400D03EF8 /* AdSupport.framework */; };
+		C0F2A5821CA8EA2100D03EF8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F2A5811CA8EA2100D03EF8 /* AVFoundation.framework */; };
+		C0F2A5841CA8EA3700D03EF8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F2A5831CA8EA3700D03EF8 /* CoreMedia.framework */; };
+		C0F2A5861CA8EA4400D03EF8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F2A5851CA8EA4400D03EF8 /* CoreTelephony.framework */; };
+		C0F2A5881CA8EA4F00D03EF8 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F2A5871CA8EA4F00D03EF8 /* EventKit.framework */; };
+		C0F2A58A1CA8EA5C00D03EF8 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F2A5891CA8EA5C00D03EF8 /* MediaPlayer.framework */; };
+		C0F2A58C1CA8EA6600D03EF8 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F2A58B1CA8EA6600D03EF8 /* MessageUI.framework */; };
+		C0F2A58E1CA8EA7400D03EF8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F2A58D1CA8EA7400D03EF8 /* SystemConfiguration.framework */; };
+		C0F66A4E1CA3CD030054563D /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F66A4D1CA3CD030054563D /* Chartboost.framework */; };
+		C0F66A501CA3CD230054563D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F66A4F1CA3CD230054563D /* StoreKit.framework */; };
+		C0F66A521CA3CD300054563D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F66A511CA3CD300054563D /* Foundation.framework */; };
+		C0F66A541CA3CD3B0054563D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F66A531CA3CD3B0054563D /* CoreGraphics.framework */; };
+		C0F66A561CA3CD450054563D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F66A551CA3CD450054563D /* UIKit.framework */; };
+		C0F66A5E1CA46C200054563D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F66A5D1CA46C200054563D /* AudioToolbox.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0F2A5651CA68B0A00D03EF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0F8D8B71CA30C6D0088E429 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0F8D8BE1CA30C6D0088E429;
+			remoteInfo = AdQuest;
+		};
+		C0F2A5731CA68B2200D03EF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0F8D8B71CA30C6D0088E429 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0F8D8BE1CA30C6D0088E429;
+			remoteInfo = AdQuest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C03DAD521CA8FEFE008F88B3 /* AdMobHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdMobHelper.swift; path = AdQuest/AdMobHelper.swift; sourceTree = SOURCE_ROOT; };
+		C0B6B2091CB2310900E6C3CA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C0B6B20B1CB2311A00E6C3CA /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		C0B6B20D1CB2315700E6C3CA /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnityAds.framework; sourceTree = "<group>"; };
+		C0B6B20F1CB2316100E6C3CA /* UnityAds.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UnityAds.bundle; sourceTree = "<group>"; };
+		C0B6B2111CB25BBF00E6C3CA /* UnityAdsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UnityAdsHelper.swift; path = AdQuest/UnityAdsHelper.swift; sourceTree = SOURCE_ROOT; };
+		C0C41FF61CAED0F600D835FF /* RadialGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RadialGradient.swift; path = AdQuest/RadialGradient.swift; sourceTree = SOURCE_ROOT; };
+		C0F2A53D1CA6889200D03EF8 /* AdQuestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdQuestHelper.swift; path = AdQuest/AdQuestHelper.swift; sourceTree = SOURCE_ROOT; };
+		C0F2A53F1CA6889D00D03EF8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = AdQuest/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		C0F2A5411CA688AF00D03EF8 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Home.swift; path = AdQuest/Home.swift; sourceTree = SOURCE_ROOT; };
+		C0F2A5431CA688C500D03EF8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = AdQuest/Info.plist; sourceTree = SOURCE_ROOT; };
+		C0F2A5451CA688CF00D03EF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = AdQuest/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		C0F2A5471CA688D800D03EF8 /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Bridge.h; path = AdQuest/Bridge.h; sourceTree = SOURCE_ROOT; };
+		C0F2A5481CA688EC00D03EF8 /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressView.swift; path = AdQuest/ProgressView.swift; sourceTree = SOURCE_ROOT; };
+		C0F2A54A1CA688F900D03EF8 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserDefaultsHelper.swift; path = AdQuest/UserDefaultsHelper.swift; sourceTree = SOURCE_ROOT; };
+		C0F2A54C1CA688FF00D03EF8 /* ChartboostHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChartboostHelper.swift; path = AdQuest/ChartboostHelper.swift; sourceTree = SOURCE_ROOT; };
+		C0F2A54E1CA6890A00D03EF8 /* AdQuestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdQuestTests.swift; path = AdQuestTests/AdQuestTests.swift; sourceTree = SOURCE_ROOT; };
+		C0F2A5501CA6891300D03EF8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = AdQuestTests/Info.plist; sourceTree = SOURCE_ROOT; };
+		C0F2A5521CA6893100D03EF8 /* AdQuestUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdQuestUITests.swift; path = AdQuestUITests/AdQuestUITests.swift; sourceTree = SOURCE_ROOT; };
+		C0F2A5541CA6893900D03EF8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = AdQuestUITests/Info.plist; sourceTree = SOURCE_ROOT; };
+		C0F2A5571CA689AA00D03EF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AdQuest/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		C0F2A55A1CA689BB00D03EF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AdQuest/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		C0F2A5601CA68B0A00D03EF8 /* AdQuestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdQuestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0F2A5621CA68B0A00D03EF8 /* AdQuestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdQuestTests.swift; sourceTree = "<group>"; };
+		C0F2A5641CA68B0A00D03EF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0F2A56E1CA68B2100D03EF8 /* AdQuestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdQuestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0F2A5701CA68B2200D03EF8 /* AdQuestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdQuestUITests.swift; sourceTree = "<group>"; };
+		C0F2A5721CA68B2200D03EF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0F2A57D1CA8A93400D03EF8 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		C0F2A57F1CA8EA1400D03EF8 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		C0F2A5811CA8EA2100D03EF8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C0F2A5831CA8EA3700D03EF8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		C0F2A5851CA8EA4400D03EF8 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		C0F2A5871CA8EA4F00D03EF8 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		C0F2A5891CA8EA5C00D03EF8 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		C0F2A58B1CA8EA6600D03EF8 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		C0F2A58D1CA8EA7400D03EF8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C0F66A4D1CA3CD030054563D /* Chartboost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Chartboost.framework; sourceTree = "<group>"; };
+		C0F66A4F1CA3CD230054563D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		C0F66A511CA3CD300054563D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C0F66A531CA3CD3B0054563D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C0F66A551CA3CD450054563D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C0F66A5D1CA46C200054563D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C0F8D8BF1CA30C6D0088E429 /* AdQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0F2A55D1CA68B0A00D03EF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F2A56B1CA68B2100D03EF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F8D8BC1CA30C6D0088E429 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0B6B20C1CB2311A00E6C3CA /* CoreFoundation.framework in Frameworks */,
+				C0B6B20A1CB2310900E6C3CA /* CFNetwork.framework in Frameworks */,
+				C0F66A501CA3CD230054563D /* StoreKit.framework in Frameworks */,
+				C0F2A58E1CA8EA7400D03EF8 /* SystemConfiguration.framework in Frameworks */,
+				C0F2A58C1CA8EA6600D03EF8 /* MessageUI.framework in Frameworks */,
+				C0F2A58A1CA8EA5C00D03EF8 /* MediaPlayer.framework in Frameworks */,
+				C0F2A5881CA8EA4F00D03EF8 /* EventKit.framework in Frameworks */,
+				C0F2A5861CA8EA4400D03EF8 /* CoreTelephony.framework in Frameworks */,
+				C0F2A5841CA8EA3700D03EF8 /* CoreMedia.framework in Frameworks */,
+				C0F2A5821CA8EA2100D03EF8 /* AVFoundation.framework in Frameworks */,
+				C0F2A5801CA8EA1400D03EF8 /* AdSupport.framework in Frameworks */,
+				C0F66A5E1CA46C200054563D /* AudioToolbox.framework in Frameworks */,
+				C0F66A561CA3CD450054563D /* UIKit.framework in Frameworks */,
+				C0F66A541CA3CD3B0054563D /* CoreGraphics.framework in Frameworks */,
+				C0F66A521CA3CD300054563D /* Foundation.framework in Frameworks */,
+				C0F2A57E1CA8A93400D03EF8 /* GoogleMobileAds.framework in Frameworks */,
+				C0F66A4E1CA3CD030054563D /* Chartboost.framework in Frameworks */,
+				C0B6B20E1CB2315700E6C3CA /* UnityAds.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0F2A53A1CA67E1200D03EF8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C0F2A5481CA688EC00D03EF8 /* ProgressView.swift */,
+				C0C41FF61CAED0F600D835FF /* RadialGradient.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C0F2A5611CA68B0A00D03EF8 /* AdQuestTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0F2A5621CA68B0A00D03EF8 /* AdQuestTests.swift */,
+				C0F2A5641CA68B0A00D03EF8 /* Info.plist */,
+			);
+			path = AdQuestTests;
+			sourceTree = "<group>";
+		};
+		C0F2A56F1CA68B2200D03EF8 /* AdQuestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C0F2A5701CA68B2200D03EF8 /* AdQuestUITests.swift */,
+				C0F2A5721CA68B2200D03EF8 /* Info.plist */,
+			);
+			path = AdQuestUITests;
+			sourceTree = "<group>";
+		};
+		C0F66A5A1CA43E650054563D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C0F2A53D1CA6889200D03EF8 /* AdQuestHelper.swift */,
+				C0F2A54A1CA688F900D03EF8 /* UserDefaultsHelper.swift */,
+				C03DAD521CA8FEFE008F88B3 /* AdMobHelper.swift */,
+				C0F2A54C1CA688FF00D03EF8 /* ChartboostHelper.swift */,
+				C0B6B2111CB25BBF00E6C3CA /* UnityAdsHelper.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C0F8D8B61CA30C6D0088E429 = {
+			isa = PBXGroup;
+			children = (
+				C0B6B20B1CB2311A00E6C3CA /* CoreFoundation.framework */,
+				C0B6B2091CB2310900E6C3CA /* CFNetwork.framework */,
+				C0F8D8C11CA30C6D0088E429 /* AdQuest */,
+				C0F8D8F81CA32C930088E429 /* Libraries */,
+				C0F8D8D61CA30C6E0088E429 /* AdQuestTests */,
+				C0F8D8E11CA30C6E0088E429 /* AdQuestUITests */,
+				C0F2A5611CA68B0A00D03EF8 /* AdQuestTests */,
+				C0F2A56F1CA68B2200D03EF8 /* AdQuestUITests */,
+				C0F8D8C01CA30C6D0088E429 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C0F8D8C01CA30C6D0088E429 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0F8D8BF1CA30C6D0088E429 /* AdQuest.app */,
+				C0F2A5601CA68B0A00D03EF8 /* AdQuestTests.xctest */,
+				C0F2A56E1CA68B2100D03EF8 /* AdQuestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0F8D8C11CA30C6D0088E429 /* AdQuest */ = {
+			isa = PBXGroup;
+			children = (
+				C0F2A53F1CA6889D00D03EF8 /* AppDelegate.swift */,
+				C0F2A5561CA689AA00D03EF8 /* Main.storyboard */,
+				C0F8D8F51CA30DE10088E429 /* View Controllers */,
+				C0F2A53A1CA67E1200D03EF8 /* View */,
+				C0F66A5A1CA43E650054563D /* Model */,
+				C0F8D8F01CA30CF20088E429 /* Supporting Files */,
+			);
+			name = AdQuest;
+			path = AdWatching;
+			sourceTree = "<group>";
+		};
+		C0F8D8D61CA30C6E0088E429 /* AdQuestTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0F2A54E1CA6890A00D03EF8 /* AdQuestTests.swift */,
+				C0F2A5501CA6891300D03EF8 /* Info.plist */,
+			);
+			name = AdQuestTests;
+			path = AdWatchingTests;
+			sourceTree = "<group>";
+		};
+		C0F8D8E11CA30C6E0088E429 /* AdQuestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C0F2A5521CA6893100D03EF8 /* AdQuestUITests.swift */,
+				C0F2A5541CA6893900D03EF8 /* Info.plist */,
+			);
+			name = AdQuestUITests;
+			path = AdWatchingUITests;
+			sourceTree = "<group>";
+		};
+		C0F8D8F01CA30CF20088E429 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0F2A5591CA689BB00D03EF8 /* LaunchScreen.storyboard */,
+				C0F2A5471CA688D800D03EF8 /* Bridge.h */,
+				C0F2A5451CA688CF00D03EF8 /* Assets.xcassets */,
+				C0F2A5431CA688C500D03EF8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C0F8D8F51CA30DE10088E429 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C0F2A5411CA688AF00D03EF8 /* Home.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C0F8D8F81CA32C930088E429 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				C0B6B20F1CB2316100E6C3CA /* UnityAds.bundle */,
+				C0B6B20D1CB2315700E6C3CA /* UnityAds.framework */,
+				C0F2A58D1CA8EA7400D03EF8 /* SystemConfiguration.framework */,
+				C0F2A58B1CA8EA6600D03EF8 /* MessageUI.framework */,
+				C0F2A5891CA8EA5C00D03EF8 /* MediaPlayer.framework */,
+				C0F2A5871CA8EA4F00D03EF8 /* EventKit.framework */,
+				C0F2A5851CA8EA4400D03EF8 /* CoreTelephony.framework */,
+				C0F2A5831CA8EA3700D03EF8 /* CoreMedia.framework */,
+				C0F2A5811CA8EA2100D03EF8 /* AVFoundation.framework */,
+				C0F2A57F1CA8EA1400D03EF8 /* AdSupport.framework */,
+				C0F2A57D1CA8A93400D03EF8 /* GoogleMobileAds.framework */,
+				C0F66A5D1CA46C200054563D /* AudioToolbox.framework */,
+				C0F66A551CA3CD450054563D /* UIKit.framework */,
+				C0F66A531CA3CD3B0054563D /* CoreGraphics.framework */,
+				C0F66A511CA3CD300054563D /* Foundation.framework */,
+				C0F66A4F1CA3CD230054563D /* StoreKit.framework */,
+				C0F66A4D1CA3CD030054563D /* Chartboost.framework */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0F2A55F1CA68B0A00D03EF8 /* AdQuestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0F2A5671CA68B0A00D03EF8 /* Build configuration list for PBXNativeTarget "AdQuestTests" */;
+			buildPhases = (
+				C0F2A55C1CA68B0A00D03EF8 /* Sources */,
+				C0F2A55D1CA68B0A00D03EF8 /* Frameworks */,
+				C0F2A55E1CA68B0A00D03EF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0F2A5661CA68B0A00D03EF8 /* PBXTargetDependency */,
+			);
+			name = AdQuestTests;
+			productName = AdQuestTests;
+			productReference = C0F2A5601CA68B0A00D03EF8 /* AdQuestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C0F2A56D1CA68B2100D03EF8 /* AdQuestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0F2A5751CA68B2200D03EF8 /* Build configuration list for PBXNativeTarget "AdQuestUITests" */;
+			buildPhases = (
+				C0F2A56A1CA68B2100D03EF8 /* Sources */,
+				C0F2A56B1CA68B2100D03EF8 /* Frameworks */,
+				C0F2A56C1CA68B2100D03EF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0F2A5741CA68B2200D03EF8 /* PBXTargetDependency */,
+			);
+			name = AdQuestUITests;
+			productName = AdQuestUITests;
+			productReference = C0F2A56E1CA68B2100D03EF8 /* AdQuestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C0F8D8BE1CA30C6D0088E429 /* AdQuest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0F8D8E71CA30C6E0088E429 /* Build configuration list for PBXNativeTarget "AdQuest" */;
+			buildPhases = (
+				C0F8D8BB1CA30C6D0088E429 /* Sources */,
+				C0F8D8BC1CA30C6D0088E429 /* Frameworks */,
+				C0F8D8BD1CA30C6D0088E429 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdQuest;
+			productName = AdWatching;
+			productReference = C0F8D8BF1CA30C6D0088E429 /* AdQuest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0F8D8B71CA30C6D0088E429 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Ashton Meuser";
+				TargetAttributes = {
+					C0F2A55F1CA68B0A00D03EF8 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 9EJMY5Z83L;
+						TestTargetID = C0F8D8BE1CA30C6D0088E429;
+					};
+					C0F2A56D1CA68B2100D03EF8 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = C0F8D8BE1CA30C6D0088E429;
+					};
+					C0F8D8BE1CA30C6D0088E429 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 9EJMY5Z83L;
+					};
+				};
+			};
+			buildConfigurationList = C0F8D8BA1CA30C6D0088E429 /* Build configuration list for PBXProject "AdQuest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0F8D8B61CA30C6D0088E429;
+			productRefGroup = C0F8D8C01CA30C6D0088E429 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0F8D8BE1CA30C6D0088E429 /* AdQuest */,
+				C0F2A55F1CA68B0A00D03EF8 /* AdQuestTests */,
+				C0F2A56D1CA68B2100D03EF8 /* AdQuestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0F2A55E1CA68B0A00D03EF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F2A56C1CA68B2100D03EF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F8D8BD1CA30C6D0088E429 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0B6B2101CB2316100E6C3CA /* UnityAds.bundle in Resources */,
+				C0F2A5581CA689AA00D03EF8 /* Main.storyboard in Resources */,
+				C0F2A55B1CA689BB00D03EF8 /* LaunchScreen.storyboard in Resources */,
+				C0F2A5461CA688CF00D03EF8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0F2A55C1CA68B0A00D03EF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F2A5631CA68B0A00D03EF8 /* AdQuestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F2A56A1CA68B2100D03EF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F2A5711CA68B2200D03EF8 /* AdQuestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F8D8BB1CA30C6D0088E429 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F2A54B1CA688F900D03EF8 /* UserDefaultsHelper.swift in Sources */,
+				C0F2A54D1CA688FF00D03EF8 /* ChartboostHelper.swift in Sources */,
+				C0C41FF71CAED0F600D835FF /* RadialGradient.swift in Sources */,
+				C0F2A5401CA6889D00D03EF8 /* AppDelegate.swift in Sources */,
+				C0F2A5491CA688EC00D03EF8 /* ProgressView.swift in Sources */,
+				C0B6B2121CB25BBF00E6C3CA /* UnityAdsHelper.swift in Sources */,
+				C0F2A5421CA688AF00D03EF8 /* Home.swift in Sources */,
+				C0F2A53E1CA6889200D03EF8 /* AdQuestHelper.swift in Sources */,
+				C03DAD531CA8FEFE008F88B3 /* AdMobHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0F2A5661CA68B0A00D03EF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0F8D8BE1CA30C6D0088E429 /* AdQuest */;
+			targetProxy = C0F2A5651CA68B0A00D03EF8 /* PBXContainerItemProxy */;
+		};
+		C0F2A5741CA68B2200D03EF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0F8D8BE1CA30C6D0088E429 /* AdQuest */;
+			targetProxy = C0F2A5731CA68B2200D03EF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C0F2A5561CA689AA00D03EF8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0F2A5571CA689AA00D03EF8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C0F2A5591CA689BB00D03EF8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0F2A55A1CA689BB00D03EF8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0F2A5681CA68B0A00D03EF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AdQuestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ashton-Meuser.AdQuestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdQuest.app/AdQuest";
+			};
+			name = Debug;
+		};
+		C0F2A5691CA68B0A00D03EF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AdQuestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ashton-Meuser.AdQuestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdQuest.app/AdQuest";
+			};
+			name = Release;
+		};
+		C0F2A5761CA68B2200D03EF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AdQuestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ashton-Meuser.AdQuestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AdQuest;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C0F2A5771CA68B2200D03EF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AdQuestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ashton-Meuser.AdQuestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AdQuest;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		C0F8D8E51CA30C6E0088E429 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C0F8D8E61CA30C6E0088E429 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0F8D8E81CA30C6E0088E429 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = AdQuest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ashton-Meuser.AdQuest";
+				PRODUCT_NAME = AdQuest;
+				SWIFT_OBJC_BRIDGING_HEADER = AdQuest/Bridge.h;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C0F8D8E91CA30C6E0088E429 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = AdQuest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ashton-Meuser.AdQuest";
+				PRODUCT_NAME = AdQuest;
+				SWIFT_OBJC_BRIDGING_HEADER = AdQuest/Bridge.h;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0F2A5671CA68B0A00D03EF8 /* Build configuration list for PBXNativeTarget "AdQuestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0F2A5681CA68B0A00D03EF8 /* Debug */,
+				C0F2A5691CA68B0A00D03EF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0F2A5751CA68B2200D03EF8 /* Build configuration list for PBXNativeTarget "AdQuestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0F2A5761CA68B2200D03EF8 /* Debug */,
+				C0F2A5771CA68B2200D03EF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0F8D8BA1CA30C6D0088E429 /* Build configuration list for PBXProject "AdQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0F8D8E51CA30C6E0088E429 /* Debug */,
+				C0F8D8E61CA30C6E0088E429 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0F8D8E71CA30C6E0088E429 /* Build configuration list for PBXNativeTarget "AdQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0F8D8E81CA30C6E0088E429 /* Debug */,
+				C0F8D8E91CA30C6E0088E429 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0F8D8B71CA30C6D0088E429 /* Project object */;
+}
