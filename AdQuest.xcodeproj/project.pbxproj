@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C03DAD531CA8FEFE008F88B3 /* AdMobHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03DAD521CA8FEFE008F88B3 /* AdMobHelper.swift */; };
+		C0B20BA11D81FEF80026C74D /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B20BA01D81FEF80026C74D /* AnimationView.swift */; };
 		C0B6B20A1CB2310900E6C3CA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B6B2091CB2310900E6C3CA /* CFNetwork.framework */; };
 		C0B6B20C1CB2311A00E6C3CA /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B6B20B1CB2311A00E6C3CA /* CoreFoundation.framework */; };
 		C0B6B20E1CB2315700E6C3CA /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B6B20D1CB2315700E6C3CA /* UnityAds.framework */; };
@@ -59,6 +60,7 @@
 
 /* Begin PBXFileReference section */
 		C03DAD521CA8FEFE008F88B3 /* AdMobHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdMobHelper.swift; path = AdQuest/AdMobHelper.swift; sourceTree = SOURCE_ROOT; };
+		C0B20BA01D81FEF80026C74D /* AnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimationView.swift; path = AdQuest/AnimationView.swift; sourceTree = SOURCE_ROOT; };
 		C0B6B2091CB2310900E6C3CA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		C0B6B20B1CB2311A00E6C3CA /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		C0B6B20D1CB2315700E6C3CA /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnityAds.framework; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				C0F2A5481CA688EC00D03EF8 /* ProgressView.swift */,
+				C0B20BA01D81FEF80026C74D /* AnimationView.swift */,
 				C0C41FF61CAED0F600D835FF /* RadialGradient.swift */,
 			);
 			name = View;
@@ -413,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0F2A54B1CA688F900D03EF8 /* UserDefaultsHelper.swift in Sources */,
+				C0B20BA11D81FEF80026C74D /* AnimationView.swift in Sources */,
 				C0F2A54D1CA688FF00D03EF8 /* ChartboostHelper.swift in Sources */,
 				C0C41FF71CAED0F600D835FF /* RadialGradient.swift in Sources */,
 				C0F2A5401CA6889D00D03EF8 /* AppDelegate.swift in Sources */,
