@@ -23,8 +23,6 @@
 		C0F2A54D1CA688FF00D03EF8 /* ChartboostHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2A54C1CA688FF00D03EF8 /* ChartboostHelper.swift */; };
 		C0F2A5581CA689AA00D03EF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F2A5561CA689AA00D03EF8 /* Main.storyboard */; };
 		C0F2A55B1CA689BB00D03EF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F2A5591CA689BB00D03EF8 /* LaunchScreen.storyboard */; };
-		C0F2A5631CA68B0A00D03EF8 /* AdQuestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2A5621CA68B0A00D03EF8 /* AdQuestTests.swift */; };
-		C0F2A5711CA68B2200D03EF8 /* AdQuestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2A5701CA68B2200D03EF8 /* AdQuestUITests.swift */; };
 		C0F2A57E1CA8A93400D03EF8 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F2A57D1CA8A93400D03EF8 /* GoogleMobileAds.framework */; };
 		C0F2A5801CA8EA1400D03EF8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F2A57F1CA8EA1400D03EF8 /* AdSupport.framework */; };
 		C0F2A5821CA8EA2100D03EF8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F2A5811CA8EA2100D03EF8 /* AVFoundation.framework */; };
@@ -83,11 +81,7 @@
 		C0F2A5571CA689AA00D03EF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AdQuest/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		C0F2A55A1CA689BB00D03EF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AdQuest/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		C0F2A5601CA68B0A00D03EF8 /* AdQuestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdQuestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0F2A5621CA68B0A00D03EF8 /* AdQuestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdQuestTests.swift; sourceTree = "<group>"; };
-		C0F2A5641CA68B0A00D03EF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0F2A56E1CA68B2100D03EF8 /* AdQuestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdQuestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0F2A5701CA68B2200D03EF8 /* AdQuestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdQuestUITests.swift; sourceTree = "<group>"; };
-		C0F2A5721CA68B2200D03EF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0F2A57D1CA8A93400D03EF8 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		C0F2A57F1CA8EA1400D03EF8 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		C0F2A5811CA8EA2100D03EF8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -158,24 +152,6 @@
 			name = View;
 			sourceTree = "<group>";
 		};
-		C0F2A5611CA68B0A00D03EF8 /* AdQuestTests */ = {
-			isa = PBXGroup;
-			children = (
-				C0F2A5621CA68B0A00D03EF8 /* AdQuestTests.swift */,
-				C0F2A5641CA68B0A00D03EF8 /* Info.plist */,
-			);
-			path = AdQuestTests;
-			sourceTree = "<group>";
-		};
-		C0F2A56F1CA68B2200D03EF8 /* AdQuestUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C0F2A5701CA68B2200D03EF8 /* AdQuestUITests.swift */,
-				C0F2A5721CA68B2200D03EF8 /* Info.plist */,
-			);
-			path = AdQuestUITests;
-			sourceTree = "<group>";
-		};
 		C0F66A5A1CA43E650054563D /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,14 +167,10 @@
 		C0F8D8B61CA30C6D0088E429 = {
 			isa = PBXGroup;
 			children = (
-				C0B6B20B1CB2311A00E6C3CA /* CoreFoundation.framework */,
-				C0B6B2091CB2310900E6C3CA /* CFNetwork.framework */,
 				C0F8D8C11CA30C6D0088E429 /* AdQuest */,
 				C0F8D8F81CA32C930088E429 /* Libraries */,
 				C0F8D8D61CA30C6E0088E429 /* AdQuestTests */,
 				C0F8D8E11CA30C6E0088E429 /* AdQuestUITests */,
-				C0F2A5611CA68B0A00D03EF8 /* AdQuestTests */,
-				C0F2A56F1CA68B2200D03EF8 /* AdQuestUITests */,
 				C0F8D8C01CA30C6D0088E429 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -270,6 +242,8 @@
 			isa = PBXGroup;
 			children = (
 				C0B6B20F1CB2316100E6C3CA /* UnityAds.bundle */,
+				C0B6B20B1CB2311A00E6C3CA /* CoreFoundation.framework */,
+				C0B6B2091CB2310900E6C3CA /* CFNetwork.framework */,
 				C0B6B20D1CB2315700E6C3CA /* UnityAds.framework */,
 				C0F2A58D1CA8EA7400D03EF8 /* SystemConfiguration.framework */,
 				C0F2A58B1CA8EA6600D03EF8 /* MessageUI.framework */,
@@ -424,7 +398,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0F2A5631CA68B0A00D03EF8 /* AdQuestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,7 +405,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0F2A5711CA68B2200D03EF8 /* AdQuestUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
