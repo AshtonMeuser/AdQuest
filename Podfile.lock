@@ -1,0 +1,18 @@
+PODS:
+  - ChartboostSDK (6.5.0)
+  - GoogleMobileAds (7.8.0)
+  - UnityAds (1.5.6)
+
+DEPENDENCIES:
+  - ChartboostSDK (~> 6.5)
+  - GoogleMobileAds (~> 7.8)
+  - UnityAds (~> 1.5)
+
+SPEC CHECKSUMS:
+  ChartboostSDK: 617003db762ec0bf7c7ac17d0e90a028feb82a99
+  GoogleMobileAds: c79931d6eef16b1e4c35d331cf23c47e0dd490d2
+  UnityAds: 717325c6fe6133fe83f7fd0f2993481df559637e
+
+PODFILE CHECKSUM: 4a58f84ae05949bcedeffc780c53b7652585d3b9
+
+COCOAPODS: 1.0.0

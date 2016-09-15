@@ -17,13 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         // Chartboost
-        Chartboost.start(withAppId: "", appSignature: "", delegate: nil)
+        Chartboost.start(withAppId: Credentials.chartboostAppId, appSignature: Credentials.chartboostAppSignature, delegate: nil)
         Chartboost.setAutoCacheAds(false)
         Chartboost.setStatusBarBehavior(CBStatusBarBehavior.respect)
         Chartboost.setShouldRequestInterstitialsInFirstSession(true)
         
         // Unity ads
-        UnityAds.sharedInstance().start(withGameId: "", andViewController: self.window?.rootViewController)
+        UnityAds.sharedInstance().start(withGameId: Credentials.unityAdsGameId, andViewController: self.window?.rootViewController)
         
         
         return true

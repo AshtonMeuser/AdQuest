@@ -21,10 +21,13 @@ class UnityAdsHelper: NSObject, UnityAdsDelegate {
     
     var delegate : UnityAdsHelperDelegate?
     
-    var clickedInterstitial = false
+    var clickedVideo = false
     
     override init() {
         super.init()
+        
+        UnityAds.sharedInstance().setZone("video")
+        UnityAds.sharedInstance().delegate = self
         
         NotificationCenter.default.addObserver(self, selector: #selector(UnityAdsHelper.applicationDidBecomeActive), name: NSNotification.Name(rawValue: "applicationDidBecomeActive"), object: nil)
     }
@@ -33,38 +36,13 @@ class UnityAdsHelper: NSObject, UnityAdsDelegate {
         return unityAdsHelper
     }
     
-    func cacheRewardedVideo() {
-        Chartboost.cacheRewardedVideo(CBLocationDefault)
-    }
-    
-    func cacheInterstitial() {
-        Chartboost.cacheInterstitial(CBLocationDefault)
-    }
-    
-    func showInterstitial(_ rootViewController: UIViewController) -> Bool {
-        if Chartboost.hasInterstitial(CBLocationDefault) == true {
-            Chartboost.showInterstitial(CBLocationDefault)
-            return true
-        }else{
-            cacheInterstitial()
-        }
-        return false
-    }
-    
-    func showRewardedVideo() -> Bool {
-        //        return false // DEBUG
-        if Chartboost.hasRewardedVideo(CBLocationDefault) {
-            Chartboost.showRewardedVideo(CBLocationDefault)
-            return true
-        }else{
-            Chartboost.cacheRewardedVideo(CBLocationDefault)
-        }
-        return false
+    func showRewardedVideo() -> Void {
+        UnityAds.sharedInstance().show()
     }
     
     func applicationDidBecomeActive() {
-        if clickedInterstitial == true {
-            clickedInterstitial = false
+        if clickedVideo == true {
+            clickedVideo = false
             delegate?.completedInterstitial()
         }
     }
@@ -73,7 +51,7 @@ class UnityAdsHelper: NSObject, UnityAdsDelegate {
     
     // Video
     func unityAdsVideoCompleted(_ rewardItemKey: String!, skipped: Bool) {
-        //
+        delegate?.completedRewardedVideo()
     }
     
     func unityAdsDidHide() {}
@@ -83,5 +61,8 @@ class UnityAdsHelper: NSObject, UnityAdsDelegate {
     func unityAdsFetchFailed() {}
     func unityAdsVideoStarted() {}
     func unityAdsFetchCompleted() {}
-    func unityAdsWillLeaveApplication() {}
+    func unityAdsWillLeaveApplication() {
+        clickedVideo = true
+        delegate?.clickedAd()
+    }
 }

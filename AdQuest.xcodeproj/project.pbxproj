@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13D51CFAC2C6253CE4FEB7EA /* Pods_AdQuest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7723401F95AAC6FAE6ADEEA6 /* Pods_AdQuest.framework */; };
+		3785D94B50E94A242DC4389D /* Pods_AdQuestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2FD70CBE88B8D5F483A94C2 /* Pods_AdQuestUITests.framework */; };
+		6C95A8531D0B71BF57F67D79 /* Pods_AdQuestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B9D8691B3C2F8AF4CFA4BD /* Pods_AdQuestTests.framework */; };
 		C03DAD531CA8FEFE008F88B3 /* AdMobHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03DAD521CA8FEFE008F88B3 /* AdMobHelper.swift */; };
 		C0B20BA11D81FEF80026C74D /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B20BA01D81FEF80026C74D /* AnimationView.swift */; };
-		C0B6B20A1CB2310900E6C3CA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B6B2091CB2310900E6C3CA /* CFNetwork.framework */; };
-		C0B6B20C1CB2311A00E6C3CA /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B6B20B1CB2311A00E6C3CA /* CoreFoundation.framework */; };
-		C0B6B20E1CB2315700E6C3CA /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B6B20D1CB2315700E6C3CA /* UnityAds.framework */; };
-		C0B6B2101CB2316100E6C3CA /* UnityAds.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C0B6B20F1CB2316100E6C3CA /* UnityAds.bundle */; };
 		C0B6B2121CB25BBF00E6C3CA /* UnityAdsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6B2111CB25BBF00E6C3CA /* UnityAdsHelper.swift */; };
 		C0C41FF71CAED0F600D835FF /* RadialGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C41FF61CAED0F600D835FF /* RadialGradient.swift */; };
+		C0E59C4C1D8A7BC600BEDFD6 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E59C4B1D8A7BC600BEDFD6 /* Credentials.swift */; };
 		C0F2A53E1CA6889200D03EF8 /* AdQuestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2A53D1CA6889200D03EF8 /* AdQuestHelper.swift */; };
 		C0F2A5401CA6889D00D03EF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2A53F1CA6889D00D03EF8 /* AppDelegate.swift */; };
 		C0F2A5421CA688AF00D03EF8 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2A5411CA688AF00D03EF8 /* Home.swift */; };
@@ -24,21 +24,6 @@
 		C0F2A54D1CA688FF00D03EF8 /* ChartboostHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2A54C1CA688FF00D03EF8 /* ChartboostHelper.swift */; };
 		C0F2A5581CA689AA00D03EF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F2A5561CA689AA00D03EF8 /* Main.storyboard */; };
 		C0F2A55B1CA689BB00D03EF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F2A5591CA689BB00D03EF8 /* LaunchScreen.storyboard */; };
-		C0F2A57E1CA8A93400D03EF8 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F2A57D1CA8A93400D03EF8 /* GoogleMobileAds.framework */; };
-		C0F2A5801CA8EA1400D03EF8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F2A57F1CA8EA1400D03EF8 /* AdSupport.framework */; };
-		C0F2A5821CA8EA2100D03EF8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F2A5811CA8EA2100D03EF8 /* AVFoundation.framework */; };
-		C0F2A5841CA8EA3700D03EF8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F2A5831CA8EA3700D03EF8 /* CoreMedia.framework */; };
-		C0F2A5861CA8EA4400D03EF8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F2A5851CA8EA4400D03EF8 /* CoreTelephony.framework */; };
-		C0F2A5881CA8EA4F00D03EF8 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F2A5871CA8EA4F00D03EF8 /* EventKit.framework */; };
-		C0F2A58A1CA8EA5C00D03EF8 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F2A5891CA8EA5C00D03EF8 /* MediaPlayer.framework */; };
-		C0F2A58C1CA8EA6600D03EF8 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F2A58B1CA8EA6600D03EF8 /* MessageUI.framework */; };
-		C0F2A58E1CA8EA7400D03EF8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F2A58D1CA8EA7400D03EF8 /* SystemConfiguration.framework */; };
-		C0F66A4E1CA3CD030054563D /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F66A4D1CA3CD030054563D /* Chartboost.framework */; };
-		C0F66A501CA3CD230054563D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F66A4F1CA3CD230054563D /* StoreKit.framework */; };
-		C0F66A521CA3CD300054563D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F66A511CA3CD300054563D /* Foundation.framework */; };
-		C0F66A541CA3CD3B0054563D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F66A531CA3CD3B0054563D /* CoreGraphics.framework */; };
-		C0F66A561CA3CD450054563D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F66A551CA3CD450054563D /* UIKit.framework */; };
-		C0F66A5E1CA46C200054563D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F66A5D1CA46C200054563D /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,14 +44,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		147FE73585CF0969DE915B9E /* Pods-AdQuestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdQuestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdQuestTests/Pods-AdQuestTests.release.xcconfig"; sourceTree = "<group>"; };
+		262E2874A849B1FE242B6F7A /* Pods-AdQuestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdQuestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdQuestTests/Pods-AdQuestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		29E57A881CCC0FD7FA905644 /* Pods-AdQuest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdQuest.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdQuest/Pods-AdQuest.release.xcconfig"; sourceTree = "<group>"; };
+		3F430D375CFDFF4D1D358524 /* Pods-AdQuestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdQuestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdQuestUITests/Pods-AdQuestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6D04E96471329948DA9C9571 /* Pods-AdQuestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdQuestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdQuestUITests/Pods-AdQuestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7723401F95AAC6FAE6ADEEA6 /* Pods_AdQuest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdQuest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD5B151814C330E906182C94 /* Pods-AdQuest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdQuest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdQuest/Pods-AdQuest.debug.xcconfig"; sourceTree = "<group>"; };
 		C03DAD521CA8FEFE008F88B3 /* AdMobHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdMobHelper.swift; path = AdQuest/AdMobHelper.swift; sourceTree = SOURCE_ROOT; };
 		C0B20BA01D81FEF80026C74D /* AnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimationView.swift; path = AdQuest/AnimationView.swift; sourceTree = SOURCE_ROOT; };
-		C0B6B2091CB2310900E6C3CA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		C0B6B20B1CB2311A00E6C3CA /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		C0B6B20D1CB2315700E6C3CA /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnityAds.framework; sourceTree = "<group>"; };
-		C0B6B20F1CB2316100E6C3CA /* UnityAds.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UnityAds.bundle; sourceTree = "<group>"; };
 		C0B6B2111CB25BBF00E6C3CA /* UnityAdsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UnityAdsHelper.swift; path = AdQuest/UnityAdsHelper.swift; sourceTree = SOURCE_ROOT; };
 		C0C41FF61CAED0F600D835FF /* RadialGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RadialGradient.swift; path = AdQuest/RadialGradient.swift; sourceTree = SOURCE_ROOT; };
+		C0E59C4B1D8A7BC600BEDFD6 /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Credentials.swift; path = AdQuest/Credentials.swift; sourceTree = SOURCE_ROOT; };
 		C0F2A53D1CA6889200D03EF8 /* AdQuestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdQuestHelper.swift; path = AdQuest/AdQuestHelper.swift; sourceTree = SOURCE_ROOT; };
 		C0F2A53F1CA6889D00D03EF8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = AdQuest/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		C0F2A5411CA688AF00D03EF8 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Home.swift; path = AdQuest/Home.swift; sourceTree = SOURCE_ROOT; };
@@ -84,22 +73,9 @@
 		C0F2A55A1CA689BB00D03EF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AdQuest/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		C0F2A5601CA68B0A00D03EF8 /* AdQuestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdQuestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0F2A56E1CA68B2100D03EF8 /* AdQuestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdQuestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0F2A57D1CA8A93400D03EF8 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
-		C0F2A57F1CA8EA1400D03EF8 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		C0F2A5811CA8EA2100D03EF8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		C0F2A5831CA8EA3700D03EF8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		C0F2A5851CA8EA4400D03EF8 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		C0F2A5871CA8EA4F00D03EF8 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
-		C0F2A5891CA8EA5C00D03EF8 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		C0F2A58B1CA8EA6600D03EF8 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		C0F2A58D1CA8EA7400D03EF8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		C0F66A4D1CA3CD030054563D /* Chartboost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Chartboost.framework; sourceTree = "<group>"; };
-		C0F66A4F1CA3CD230054563D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		C0F66A511CA3CD300054563D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C0F66A531CA3CD3B0054563D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C0F66A551CA3CD450054563D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		C0F66A5D1CA46C200054563D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C0F8D8BF1CA30C6D0088E429 /* AdQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2FD70CBE88B8D5F483A94C2 /* Pods_AdQuestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdQuestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8B9D8691B3C2F8AF4CFA4BD /* Pods_AdQuestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdQuestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C95A8531D0B71BF57F67D79 /* Pods_AdQuestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3785D94B50E94A242DC4389D /* Pods_AdQuestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,30 +99,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0B6B20C1CB2311A00E6C3CA /* CoreFoundation.framework in Frameworks */,
-				C0B6B20A1CB2310900E6C3CA /* CFNetwork.framework in Frameworks */,
-				C0F66A501CA3CD230054563D /* StoreKit.framework in Frameworks */,
-				C0F2A58E1CA8EA7400D03EF8 /* SystemConfiguration.framework in Frameworks */,
-				C0F2A58C1CA8EA6600D03EF8 /* MessageUI.framework in Frameworks */,
-				C0F2A58A1CA8EA5C00D03EF8 /* MediaPlayer.framework in Frameworks */,
-				C0F2A5881CA8EA4F00D03EF8 /* EventKit.framework in Frameworks */,
-				C0F2A5861CA8EA4400D03EF8 /* CoreTelephony.framework in Frameworks */,
-				C0F2A5841CA8EA3700D03EF8 /* CoreMedia.framework in Frameworks */,
-				C0F2A5821CA8EA2100D03EF8 /* AVFoundation.framework in Frameworks */,
-				C0F2A5801CA8EA1400D03EF8 /* AdSupport.framework in Frameworks */,
-				C0F66A5E1CA46C200054563D /* AudioToolbox.framework in Frameworks */,
-				C0F66A561CA3CD450054563D /* UIKit.framework in Frameworks */,
-				C0F66A541CA3CD3B0054563D /* CoreGraphics.framework in Frameworks */,
-				C0F66A521CA3CD300054563D /* Foundation.framework in Frameworks */,
-				C0F2A57E1CA8A93400D03EF8 /* GoogleMobileAds.framework in Frameworks */,
-				C0F66A4E1CA3CD030054563D /* Chartboost.framework in Frameworks */,
-				C0B6B20E1CB2315700E6C3CA /* UnityAds.framework in Frameworks */,
+				13D51CFAC2C6253CE4FEB7EA /* Pods_AdQuest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7552E7DB20D00F0BD5B6ADB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7723401F95AAC6FAE6ADEEA6 /* Pods_AdQuest.framework */,
+				E8B9D8691B3C2F8AF4CFA4BD /* Pods_AdQuestTests.framework */,
+				E2FD70CBE88B8D5F483A94C2 /* Pods_AdQuestUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C0F2A53A1CA67E1200D03EF8 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +146,8 @@
 				C0F8D8D61CA30C6E0088E429 /* AdQuestTests */,
 				C0F8D8E11CA30C6E0088E429 /* AdQuestUITests */,
 				C0F8D8C01CA30C6D0088E429 /* Products */,
+				C327715753CFA527C27C0951 /* Pods */,
+				7552E7DB20D00F0BD5B6ADB5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -229,6 +202,7 @@
 				C0F2A5471CA688D800D03EF8 /* Bridge.h */,
 				C0F2A5451CA688CF00D03EF8 /* Assets.xcassets */,
 				C0F2A5431CA688C500D03EF8 /* Info.plist */,
+				C0E59C4B1D8A7BC600BEDFD6 /* Credentials.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -244,27 +218,21 @@
 		C0F8D8F81CA32C930088E429 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				C0B6B20F1CB2316100E6C3CA /* UnityAds.bundle */,
-				C0B6B20B1CB2311A00E6C3CA /* CoreFoundation.framework */,
-				C0B6B2091CB2310900E6C3CA /* CFNetwork.framework */,
-				C0B6B20D1CB2315700E6C3CA /* UnityAds.framework */,
-				C0F2A58D1CA8EA7400D03EF8 /* SystemConfiguration.framework */,
-				C0F2A58B1CA8EA6600D03EF8 /* MessageUI.framework */,
-				C0F2A5891CA8EA5C00D03EF8 /* MediaPlayer.framework */,
-				C0F2A5871CA8EA4F00D03EF8 /* EventKit.framework */,
-				C0F2A5851CA8EA4400D03EF8 /* CoreTelephony.framework */,
-				C0F2A5831CA8EA3700D03EF8 /* CoreMedia.framework */,
-				C0F2A5811CA8EA2100D03EF8 /* AVFoundation.framework */,
-				C0F2A57F1CA8EA1400D03EF8 /* AdSupport.framework */,
-				C0F2A57D1CA8A93400D03EF8 /* GoogleMobileAds.framework */,
-				C0F66A5D1CA46C200054563D /* AudioToolbox.framework */,
-				C0F66A551CA3CD450054563D /* UIKit.framework */,
-				C0F66A531CA3CD3B0054563D /* CoreGraphics.framework */,
-				C0F66A511CA3CD300054563D /* Foundation.framework */,
-				C0F66A4F1CA3CD230054563D /* StoreKit.framework */,
-				C0F66A4D1CA3CD030054563D /* Chartboost.framework */,
 			);
 			name = Libraries;
+			sourceTree = "<group>";
+		};
+		C327715753CFA527C27C0951 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD5B151814C330E906182C94 /* Pods-AdQuest.debug.xcconfig */,
+				29E57A881CCC0FD7FA905644 /* Pods-AdQuest.release.xcconfig */,
+				262E2874A849B1FE242B6F7A /* Pods-AdQuestTests.debug.xcconfig */,
+				147FE73585CF0969DE915B9E /* Pods-AdQuestTests.release.xcconfig */,
+				6D04E96471329948DA9C9571 /* Pods-AdQuestUITests.debug.xcconfig */,
+				3F430D375CFDFF4D1D358524 /* Pods-AdQuestUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,9 +242,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0F2A5671CA68B0A00D03EF8 /* Build configuration list for PBXNativeTarget "AdQuestTests" */;
 			buildPhases = (
+				B89BB809497EAD68428FD2B2 /* 📦 Check Pods Manifest.lock */,
 				C0F2A55C1CA68B0A00D03EF8 /* Sources */,
 				C0F2A55D1CA68B0A00D03EF8 /* Frameworks */,
 				C0F2A55E1CA68B0A00D03EF8 /* Resources */,
+				6C62241C6F34F6E99F183538 /* 📦 Embed Pods Frameworks */,
+				6F39CC8B667D48EAA0545B3D /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -292,9 +263,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0F2A5751CA68B2200D03EF8 /* Build configuration list for PBXNativeTarget "AdQuestUITests" */;
 			buildPhases = (
+				1BB6E7A2FC1FD0FF281081E4 /* 📦 Check Pods Manifest.lock */,
 				C0F2A56A1CA68B2100D03EF8 /* Sources */,
 				C0F2A56B1CA68B2100D03EF8 /* Frameworks */,
 				C0F2A56C1CA68B2100D03EF8 /* Resources */,
+				ACD8C3F67B7F1913398E8F90 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -310,9 +283,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0F8D8E71CA30C6E0088E429 /* Build configuration list for PBXNativeTarget "AdQuest" */;
 			buildPhases = (
+				B65AABBAD08BACF73FF099BE /* 📦 Check Pods Manifest.lock */,
 				C0F8D8BB1CA30C6D0088E429 /* Sources */,
 				C0F8D8BC1CA30C6D0088E429 /* Frameworks */,
 				C0F8D8BD1CA30C6D0088E429 /* Resources */,
+				17673A7DFF2855ECD0F9AE1A /* 📦 Embed Pods Frameworks */,
+				5C9A266F914EB2CE8DC72B48 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -388,7 +364,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0B6B2101CB2316100E6C3CA /* UnityAds.bundle in Resources */,
 				C0F2A5581CA689AA00D03EF8 /* Main.storyboard in Resources */,
 				C0F2A55B1CA689BB00D03EF8 /* LaunchScreen.storyboard in Resources */,
 				C0F2A5461CA688CF00D03EF8 /* Assets.xcassets in Resources */,
@@ -396,6 +371,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17673A7DFF2855ECD0F9AE1A /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AdQuest/Pods-AdQuest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1BB6E7A2FC1FD0FF281081E4 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5C9A266F914EB2CE8DC72B48 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AdQuest/Pods-AdQuest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C62241C6F34F6E99F183538 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AdQuestTests/Pods-AdQuestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F39CC8B667D48EAA0545B3D /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AdQuestTests/Pods-AdQuestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACD8C3F67B7F1913398E8F90 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AdQuestUITests/Pods-AdQuestUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B65AABBAD08BACF73FF099BE /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B89BB809497EAD68428FD2B2 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C0F2A55C1CA68B0A00D03EF8 /* Sources */ = {
@@ -419,6 +517,7 @@
 				C0F2A54B1CA688F900D03EF8 /* UserDefaultsHelper.swift in Sources */,
 				C0B20BA11D81FEF80026C74D /* AnimationView.swift in Sources */,
 				C0F2A54D1CA688FF00D03EF8 /* ChartboostHelper.swift in Sources */,
+				C0E59C4C1D8A7BC600BEDFD6 /* Credentials.swift in Sources */,
 				C0C41FF71CAED0F600D835FF /* RadialGradient.swift in Sources */,
 				C0F2A5401CA6889D00D03EF8 /* AppDelegate.swift in Sources */,
 				C0F2A5491CA688EC00D03EF8 /* ProgressView.swift in Sources */,
@@ -466,6 +565,7 @@
 /* Begin XCBuildConfiguration section */
 		C0F2A5681CA68B0A00D03EF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 262E2874A849B1FE242B6F7A /* Pods-AdQuestTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = AdQuestTests/Info.plist;
@@ -478,6 +578,7 @@
 		};
 		C0F2A5691CA68B0A00D03EF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 147FE73585CF0969DE915B9E /* Pods-AdQuestTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = AdQuestTests/Info.plist;
@@ -490,6 +591,7 @@
 		};
 		C0F2A5761CA68B2200D03EF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D04E96471329948DA9C9571 /* Pods-AdQuestUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = AdQuestUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -502,6 +604,7 @@
 		};
 		C0F2A5771CA68B2200D03EF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F430D375CFDFF4D1D358524 /* Pods-AdQuestUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = AdQuestUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -604,6 +707,7 @@
 		};
 		C0F8D8E81CA30C6E0088E429 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD5B151814C330E906182C94 /* Pods-AdQuest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -622,6 +726,7 @@
 		};
 		C0F8D8E91CA30C6E0088E429 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29E57A881CCC0FD7FA905644 /* Pods-AdQuest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (

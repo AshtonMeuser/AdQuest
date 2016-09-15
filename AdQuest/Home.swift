@@ -10,7 +10,7 @@ import UIKit
 import AudioToolbox
 import GoogleMobileAds
 
-class Home: UIViewController, AdQuestHelperDelegate, ChartboostHelperDelegate, AdMobHelperDelegate, UnityAdsDelegate {
+class Home: UIViewController, AdQuestHelperDelegate, ChartboostHelperDelegate, AdMobHelperDelegate, UnityAdsHelperDelegate {
     
     let chartboostHelper: ChartboostHelper = ChartboostHelper.sharedInstance
     let adMobHelper = AdMobHelper.sharedInstance
@@ -31,6 +31,7 @@ class Home: UIViewController, AdQuestHelperDelegate, ChartboostHelperDelegate, A
         // Set delegates
         chartboostHelper.delegate = self
         adMobHelper.delegate = self
+        unityAdsHelper.delegate = self
         adQuestHelper.delegate = self
         Chartboost.setDelegate(chartboostHelper)
         
@@ -89,14 +90,7 @@ class Home: UIViewController, AdQuestHelperDelegate, ChartboostHelperDelegate, A
     }
     
     @IBAction func test(_ sender: AnyObject) {
-        UnityAds.sharedInstance().setZone("video")
-        // DEBUG - Known bug https://devforums.apple.com/thread/229668?tstart=0
-        let tempBool = true
-        if tempBool {
-            UnityAds.sharedInstance().show()
-        }else{
-            print("UnityAds not ready")
-        }
+        unityAdsHelper.showRewardedVideo()
     }
     
     func updateLabels() {
