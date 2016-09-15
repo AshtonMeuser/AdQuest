@@ -25,23 +25,23 @@ class ProgressView: UIView {
         createProgress()
     }
     
-    func createPath(startAngle: CGFloat, endAngle: CGFloat) -> CGPath {
-        let rect = CGRectMake(lineWidth/2, lineWidth/2, self.frame.width-lineWidth, self.frame.height-lineWidth)
+    func createPath(_ startAngle: CGFloat, endAngle: CGFloat) -> CGPath {
+        let rect = CGRect(x: lineWidth/2, y: lineWidth/2, width: self.frame.width-lineWidth, height: self.frame.height-lineWidth)
         let path = UIBezierPath()
-        path.addArcWithCenter(CGPointMake(CGRectGetMidX(rect), CGRectGetMidY(rect)),
+        path.addArc(withCenter: CGPoint(x: rect.midX, y: rect.midY),
             radius: rect.width / 2,
             startAngle: startAngle,
             endAngle: endAngle,
             clockwise: true)
         
-        return path.CGPath
+        return path.cgPath
     }
     
     func createProgress() {
         // Create line
         progressLine.path = createPath(CGFloat(-M_PI/2), endAngle: CGFloat(currentAngle))
-        progressLine.strokeColor = self.tintColor.CGColor
-        progressLine.fillColor = UIColor.clearColor().CGColor
+        progressLine.strokeColor = self.tintColor.cgColor
+        progressLine.fillColor = UIColor.clear.cgColor
         progressLine.lineWidth = lineWidth
         progressLine.lineCap = kCALineCapRound
         
@@ -49,7 +49,7 @@ class ProgressView: UIView {
         self.layer.insertSublayer(progressLine, above: self.layer)
     }
     
-    func setProgress(fraction: Double = 0.0) {
+    func setProgress(_ fraction: Double = 0.0) {
         let frac = normalizeFraction(fraction)
         
         // Update path
@@ -60,7 +60,7 @@ class ProgressView: UIView {
         progressLine.path = createPath(CGFloat(-M_PI/2.0), endAngle: CGFloat(currentAngle))
     }
     
-    func animateProgress(fraction: Double, completion: () -> Void) {
+    func animateProgress(_ fraction: Double, completion: @escaping () -> Void) {
         let frac = normalizeFraction(fraction)
         
         // Update path
@@ -77,13 +77,13 @@ class ProgressView: UIView {
         animateStrokeEnd.toValue = 1.0
         
         // Add animation
-        progressLine.addAnimation(animateStrokeEnd, forKey: "animate stroke end animation")
+        progressLine.add(animateStrokeEnd, forKey: "animate stroke end animation")
         
         // Save progress
         currentAngle = (-2.5 + 2 * fraction) * M_PI - 0.01
         
         // Wait before calling completion
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(animateStrokeEnd.duration * Double(NSEC_PER_SEC))), dispatch_get_main_queue()) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(Int64(animateStrokeEnd.duration * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)) {
             completion()
         }
     }
@@ -93,7 +93,7 @@ class ProgressView: UIView {
         progressLine.path = createPath(CGFloat(-M_PI/2), endAngle: CGFloat(currentAngle))
     }
     
-    func normalizeFraction(fraction: Double) -> Double {
+    func normalizeFraction(_ fraction: Double) -> Double {
         if fraction > 1.0 {
             return 1.0
         }else if fraction < 0.0 {

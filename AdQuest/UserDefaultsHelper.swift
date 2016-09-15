@@ -16,18 +16,18 @@ private let userDefaultsHelper = UserDefaultsHelper()
 class UserDefaultsHelper: NSObject {
     
     var delegate : UserDefaulsHelperDelegate?
-    let defaults = NSUserDefaults.standardUserDefaults()
+    let defaults = UserDefaults.standard
     
     class var sharedInstance: UserDefaultsHelper {
         return userDefaultsHelper
     }
     
-    func get(name: String) -> AnyObject? {
-        return defaults.objectForKey(name)
+    func get(_ name: String) -> AnyObject? {
+        return defaults.object(forKey: name) as AnyObject?
     }
     
-    func set(name: String, value: AnyObject) {
-        defaults.setObject(value, forKey: name)
+    func set(_ name: String, value: AnyObject) {
+        defaults.set(value, forKey: name)
     }
 }
 

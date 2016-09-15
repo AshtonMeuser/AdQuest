@@ -66,10 +66,10 @@
                                 <rect key="frame" x="240" y="118" width="120" height="120"/>
                                 <subviews>
                                     <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k44-N6-4mx" customClass="RadialGradient" customModule="AdQuest" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="30" width="120" height="61"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vqe-jj-McG">
-                                                <rect key="frame" x="0.0" y="23" width="120" height="38"/>
+                                                <rect key="frame" x="0.0" y="53" width="120" height="38"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="38" id="eeh-XD-7Tk"/>
                                                 </constraints>
@@ -78,7 +78,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Vm-1l-lPd">
-                                                <rect key="frame" x="0.0" y="0.0" width="120" height="23"/>
+                                                <rect key="frame" x="0.0" y="30" width="120" height="23"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="23" id="HCi-ew-mxV"/>
                                                 </constraints>
@@ -88,22 +88,23 @@
                                             </label>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="1ai-DU-Pxx"/>
+                                            <constraint firstItem="Vqe-jj-McG" firstAttribute="top" secondItem="3Vm-1l-lPd" secondAttribute="bottom" id="2Xk-n3-lhR"/>
                                             <constraint firstAttribute="trailing" secondItem="Vqe-jj-McG" secondAttribute="trailing" id="47C-6z-9U3"/>
-                                            <constraint firstItem="Vqe-jj-McG" firstAttribute="top" secondItem="3Vm-1l-lPd" secondAttribute="bottom" id="Auw-kV-4xF"/>
                                             <constraint firstItem="3Vm-1l-lPd" firstAttribute="leading" secondItem="k44-N6-4mx" secondAttribute="leading" id="C4e-MC-omz"/>
-                                            <constraint firstItem="3Vm-1l-lPd" firstAttribute="top" secondItem="k44-N6-4mx" secondAttribute="top" id="TMm-2Z-mKq"/>
+                                            <constraint firstItem="Vqe-jj-McG" firstAttribute="top" secondItem="k44-N6-4mx" secondAttribute="top" constant="53" id="CM9-VE-laY"/>
                                             <constraint firstAttribute="trailing" secondItem="3Vm-1l-lPd" secondAttribute="trailing" id="UTx-dG-OE2"/>
+                                            <constraint firstAttribute="height" constant="120" id="aLa-4c-6zP"/>
                                             <constraint firstItem="Vqe-jj-McG" firstAttribute="leading" secondItem="k44-N6-4mx" secondAttribute="leading" id="gOA-g8-Nj1"/>
-                                            <constraint firstAttribute="bottom" secondItem="Vqe-jj-McG" secondAttribute="bottom" id="lyb-jn-v8A"/>
+                                            <constraint firstAttribute="bottom" secondItem="3Vm-1l-lPd" secondAttribute="bottom" constant="67" id="zLw-7T-sJM"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="NWu-wJ-Dua"/>
-                                    <constraint firstAttribute="trailing" secondItem="k44-N6-4mx" secondAttribute="trailing" id="NyB-5b-9Q9"/>
-                                    <constraint firstAttribute="height" constant="120" id="PRD-Z0-yRL"/>
-                                    <constraint firstItem="k44-N6-4mx" firstAttribute="leading" secondItem="YWx-6b-1na" secondAttribute="leading" id="S5J-61-2wG"/>
+                                    <constraint firstItem="k44-N6-4mx" firstAttribute="centerX" secondItem="YWx-6b-1na" secondAttribute="centerX" id="Q4i-c2-9Gs"/>
                                     <constraint firstItem="k44-N6-4mx" firstAttribute="centerY" secondItem="YWx-6b-1na" secondAttribute="centerY" id="lv8-Nu-yWT"/>
+                                    <constraint firstAttribute="width" secondItem="k44-N6-4mx" secondAttribute="width" id="xGy-1C-4nI"/>
+                                    <constraint firstAttribute="height" secondItem="k44-N6-4mx" secondAttribute="height" id="zxr-rQ-iES"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6hV-aV-l4D" customClass="GADBannerView">

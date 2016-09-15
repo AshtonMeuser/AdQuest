@@ -19,6 +19,7 @@ xcuserdata
 
 ## Other
 .DS_Store
+Credentials.swift
 *.xccheckout
 *.moved-aside
 *.xcuserstate

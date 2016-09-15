@@ -26,7 +26,7 @@ class ChartboostHelper: NSObject, ChartboostDelegate {
     override init() {
         super.init()
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ChartboostHelper.applicationDidBecomeActive), name: "applicationDidBecomeActive", object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(ChartboostHelper.applicationDidBecomeActive), name: NSNotification.Name(rawValue: "applicationDidBecomeActive"), object: nil)
     }
     
     class var sharedInstance: ChartboostHelper {
@@ -41,7 +41,7 @@ class ChartboostHelper: NSObject, ChartboostDelegate {
         Chartboost.cacheInterstitial(CBLocationDefault)
     }
     
-    func showInterstitial(rootViewController: UIViewController) -> Bool {
+    func showInterstitial(_ rootViewController: UIViewController) -> Bool {
         if Chartboost.hasInterstitial(CBLocationDefault) == true {
             Chartboost.showInterstitial(CBLocationDefault)
             return true
@@ -72,26 +72,26 @@ class ChartboostHelper: NSObject, ChartboostDelegate {
     // MARK: - Chartboost Delegate Methods
     
     // Rewarded video
-    func didCompleteRewardedVideo(location: String!, withReward reward: Int32) {
+    func didCompleteRewardedVideo(_ location: String!, withReward reward: Int32) {
         cacheRewardedVideo()
     }
     
-    func didFailToLoadRewardedVideo(location: String!, withError error: CBLoadError) {
+    func didFail(toLoadRewardedVideo location: String!, withError error: CBLoadError) {
         print("Video load failed \(error.rawValue)")
     }
     
-    func didClickRewardedVideo(location: String!) {
+    func didClickRewardedVideo(_ location: String!) {
         delegate?.clickedAd()
     }
     
-    func didDismissRewardedVideo(location: String!) {
+    func didDismissRewardedVideo(_ location: String!) {
         delegate?.completedRewardedVideo()
     }
     
-    func didCacheRewardedVideo(location: String!) {}
+    func didCacheRewardedVideo(_ location: String!) {}
     
     // Interstitial
-    func didFailToLoadInterstitial(location: String!, withError error: CBLoadError) {
+    func didFail(toLoadInterstitial location: String!, withError error: CBLoadError) {
         print("Chartboost interstitial failed: \(error.rawValue)")
     }
     
@@ -100,15 +100,15 @@ class ChartboostHelper: NSObject, ChartboostDelegate {
 //        delegate?.completedInterstitial()
 //    }
     
-    func didCloseInterstitial(location: String!) {
+    func didCloseInterstitial(_ location: String!) {
         cacheInterstitial()
         delegate?.completedInterstitial()
     }
     
-    func didClickInterstitial(location: String!) {
+    func didClickInterstitial(_ location: String!) {
         clickedInterstitial = true
         delegate?.clickedAd()
     }
     
-    func didCacheInterstitial(location: String!) {}
+    func didCacheInterstitial(_ location: String!) {}
 }

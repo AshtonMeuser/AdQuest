@@ -50,7 +50,7 @@ class Home: UIViewController, AdQuestHelperDelegate, ChartboostHelperDelegate, A
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func showAd(sender: AnyObject) {
+    @IBAction func showAd(_ sender: AnyObject) {
         print("Button pressed")
         
         
@@ -74,23 +74,25 @@ class Home: UIViewController, AdQuestHelperDelegate, ChartboostHelperDelegate, A
         iteration += 1
     }
     
-    @IBAction func testInterstitial(sender: AnyObject) {
+    @IBAction func testInterstitial(_ sender: AnyObject) {
         completedInterstitial()
     }
     
-    @IBAction func testVideo(sender: AnyObject) {
+    @IBAction func testVideo(_ sender: AnyObject) {
         completedRewardedVideo()
     }
     
-    @IBAction func reset(sender: AnyObject) {
+    @IBAction func reset(_ sender: AnyObject) {
         adQuestHelper.reset()
         progressView.setProgress()
         updateLabels()
     }
     
-    @IBAction func test(sender: AnyObject) {
+    @IBAction func test(_ sender: AnyObject) {
         UnityAds.sharedInstance().setZone("video")
-        if UnityAds.sharedInstance().canShow() == true {
+        // DEBUG - Known bug https://devforums.apple.com/thread/229668?tstart=0
+        let tempBool = true
+        if tempBool {
             UnityAds.sharedInstance().show()
         }else{
             print("UnityAds not ready")
@@ -99,31 +101,21 @@ class Home: UIViewController, AdQuestHelperDelegate, ChartboostHelperDelegate, A
     
     func updateLabels() {
         // DEBUG - probs dont need this function seeing as level is only label needing updating
-        dispatch_async(dispatch_get_main_queue(),{
+        DispatchQueue.main.async(execute: {
             self.updateLevelLabel(nil)
             self.experienceLabel.text = "Exp: \(self.adQuestHelper.getExperience())/\(self.adQuestHelper.experienceNeeded()) Luck: \(String(format: "%.5f", self.adQuestHelper.getLuck()))"
         })
     }
     
-    func updateLevelLabel(level: Int?) {
+    func updateLevelLabel(_ level: Int?) {
         let lev = (level == nil) ? adQuestHelper.getLevel() : level
         
-        dispatch_async(dispatch_get_main_queue(),{
+        DispatchQueue.main.async(execute: {
             self.levelLabel.text = String(lev!)
         })
     }
     
-    func scaleRanges(number: Double, inMin: Double, inMax: Double, outMin: Double, outMax: Double) -> Double {
-        var out = (outMax - outMin) * (number - inMin) / (inMax - inMin) + outMin
-        if out < outMin {
-            out = outMin
-        }else if out > outMax {
-            out = outMax
-        }
-        return out
-    }
-    
-    func addExperience(experience: Int) {
+    func addExperience(_ experience: Int) {
         var experienceGained = Int(Double(experience) * (adQuestHelper.randFraction() + 0.5) * adQuestHelper.clickBonus)
         
         if adQuestHelper.lucky() == true {
@@ -144,7 +136,7 @@ class Home: UIViewController, AdQuestHelperDelegate, ChartboostHelperDelegate, A
         })
     }
     
-    func levelUp(times: Int, completion: () -> Void) {
+    func levelUp(_ times: Int, completion: @escaping () -> Void) {
         if times > 0 {
             self.progressView.animateProgress(1.0, completion: {
                 self.progressView.setProgress()
@@ -159,7 +151,7 @@ class Home: UIViewController, AdQuestHelperDelegate, ChartboostHelperDelegate, A
     
     // MARK: - UnityAds delegate methods
     
-    func unityAdsVideoCompleted(rewardItemKey: String!, skipped: Bool) {
+    func unityAdsVideoCompleted(_ rewardItemKey: String!, skipped: Bool) {
         print("completed unity ad")
     }
     

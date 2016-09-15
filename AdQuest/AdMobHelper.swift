@@ -18,7 +18,7 @@ protocol AdMobHelperDelegate {
 }
 
 enum AdType {
-    case Banner, Interstitial
+    case banner, interstitial
 }
 
 private let adMobHelper = AdMobHelper()
@@ -35,7 +35,7 @@ class AdMobHelper: NSObject, GADBannerViewDelegate, GADInterstitialDelegate {
     override init() {
         super.init()
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(AdMobHelper.applicationDidBecomeActive), name: "applicationDidBecomeActive", object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(AdMobHelper.applicationDidBecomeActive), name: NSNotification.Name(rawValue: "applicationDidBecomeActive"), object: nil)
     }
     
     class var sharedInstance: AdMobHelper {
@@ -50,11 +50,11 @@ class AdMobHelper: NSObject, GADBannerViewDelegate, GADInterstitialDelegate {
             // DEBUG
             let request = GADRequest()
             request.testDevices = ["e3237a34257e69c1d1c5b5dcbb0b2dcd"]
-            inter.loadRequest(request)
+            inter.load(request)
         }
     }
     
-    func showBannerAd(rootViewController: UIViewController, banner: GADBannerView) {
+    func showBannerAd(_ rootViewController: UIViewController, banner: GADBannerView) {
         bannerView = banner
         
         if let ban = bannerView {
@@ -64,14 +64,14 @@ class AdMobHelper: NSObject, GADBannerViewDelegate, GADInterstitialDelegate {
             // DEBUG
             let request = GADRequest()
             request.testDevices = ["e3237a34257e69c1d1c5b5dcbb0b2dcd"]
-            ban.loadRequest(request)
+            ban.load(request)
         }
     }
     
-    func showInterstitial(rootViewController: UIViewController) -> Bool {
+    func showInterstitial(_ rootViewController: UIViewController) -> Bool {
         if let inter = interstitial {
             if inter.isReady {
-                inter.presentFromRootViewController(rootViewController)
+                inter.present(fromRootViewController: rootViewController)
                 return true
             }else{
                 cacheInterstitial()
@@ -84,9 +84,9 @@ class AdMobHelper: NSObject, GADBannerViewDelegate, GADInterstitialDelegate {
         print("return to app admob")
         if let type = clickedAd {
             switch type {
-            case .Banner:
+            case .banner:
                 delegate?.completedInterstitial()
-            case .Interstitial:
+            case .interstitial:
                 delegate?.completedBanner()
             }
             clickedAd = nil
@@ -100,40 +100,40 @@ class AdMobHelper: NSObject, GADBannerViewDelegate, GADInterstitialDelegate {
     // MARK: - AdMob Delegate Methods
     
     // Banner
-    func adViewWillLeaveApplication(bannerView: GADBannerView!) {
+    func adViewWillLeaveApplication(_ bannerView: GADBannerView!) {
         clickedBanner = true
-        clickedAd = .Banner
+        clickedAd = .banner
         delegate?.clickedAd()
     }
     
-    func adView(bannerView: GADBannerView!, didFailToReceiveAdWithError error: GADRequestError!) {
+    func adView(_ bannerView: GADBannerView!, didFailToReceiveAdWithError error: GADRequestError!) {
             print("AdMob banner failed: \(error.localizedDescription)")
     }
     
-    func adViewDidReceiveAd(bannerView: GADBannerView!) {}
-    func adViewWillPresentScreen(bannerView: GADBannerView!) {}
-    func adViewWillDismissScreen(bannerView: GADBannerView!) {}
-    func adViewDidDismissScreen(bannerView: GADBannerView!) {}
+    func adViewDidReceiveAd(_ bannerView: GADBannerView!) {}
+    func adViewWillPresentScreen(_ bannerView: GADBannerView!) {}
+    func adViewWillDismissScreen(_ bannerView: GADBannerView!) {}
+    func adViewDidDismissScreen(_ bannerView: GADBannerView!) {}
     
     // Interstitial
-    func interstitial(ad: GADInterstitial!, didFailToReceiveAdWithError error: GADRequestError!) {
+    func interstitial(_ ad: GADInterstitial!, didFailToReceiveAdWithError error: GADRequestError!) {
         print("AdMob interstitial failed: \(error.localizedDescription)")
     }
     
-    func interstitialDidDismissScreen(ad: GADInterstitial!) {
+    func interstitialDidDismissScreen(_ ad: GADInterstitial!) {
         print("dismiss admob")
         cacheInterstitial()
         delegate?.completedInterstitial()
     }
     
-    func interstitialWillLeaveApplication(ad: GADInterstitial!) {
+    func interstitialWillLeaveApplication(_ ad: GADInterstitial!) {
         print("leave app admob")
-        if clickedAd != .Banner {
+        if clickedAd != .banner {
             delegate?.clickedAd()
         }
     }
     
-    func interstitialWillDismissScreen(ad: GADInterstitial!) {}
-    func interstitialDidReceiveAd(ad: GADInterstitial!) {}
-    func interstitialWillPresentScreen(ad: GADInterstitial!) {}
+    func interstitialWillDismissScreen(_ ad: GADInterstitial!) {}
+    func interstitialDidReceiveAd(_ ad: GADInterstitial!) {}
+    func interstitialWillPresentScreen(_ ad: GADInterstitial!) {}
 }

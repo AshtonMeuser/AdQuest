@@ -16,9 +16,9 @@ private let adQuestHelper = AdQuestHelper()
 class AdQuestHelper: NSObject {
     
     var delegate : AdQuestHelperDelegate?
-    private let userDefaultsHelper = UserDefaultsHelper.sharedInstance
+    fileprivate let userDefaultsHelper = UserDefaultsHelper.sharedInstance
     
-    private var _clickBonus = 1.0
+    fileprivate var _clickBonus = 1.0
     var clickBonus: Double {
         set {
             _clickBonus = newValue
@@ -79,8 +79,8 @@ class AdQuestHelper: NSObject {
     }
     
     func reset() {
-        userDefaultsHelper.set("level", value: 0)
-        userDefaultsHelper.set("experience", value: 0)
+        userDefaultsHelper.set("level", value: 0 as AnyObject)
+        userDefaultsHelper.set("experience", value: 0 as AnyObject)
     }
     
     func getLevel() -> Int {
@@ -99,11 +99,11 @@ class AdQuestHelper: NSObject {
         }
     }
     
-    func incrementLevel(increment: Int) {
-        userDefaultsHelper.set("level", value: getLevel() + increment)
+    func incrementLevel(_ increment: Int) {
+        userDefaultsHelper.set("level", value: (getLevel() + increment) as AnyObject)
     }
     
-    func incrementExperience(increment: Int, completion: (timesLevelUp: Int) -> Void) {
+    func incrementExperience(_ increment: Int, completion: (_ timesLevelUp: Int) -> Void) {
         var experience = getExperience()
         var needed = experienceNeeded()
         var timesLevelUp = 0
@@ -115,8 +115,8 @@ class AdQuestHelper: NSObject {
         }
         
         incrementLevel(timesLevelUp)
-        userDefaultsHelper.set("experience", value: experience + increment)
-        completion(timesLevelUp: timesLevelUp)
+        userDefaultsHelper.set("experience", value: (experience + increment) as AnyObject)
+        completion(timesLevelUp)
     }
 }
 

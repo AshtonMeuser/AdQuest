@@ -26,7 +26,7 @@ class UnityAdsHelper: NSObject, UnityAdsDelegate {
     override init() {
         super.init()
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(UnityAdsHelper.applicationDidBecomeActive), name: "applicationDidBecomeActive", object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(UnityAdsHelper.applicationDidBecomeActive), name: NSNotification.Name(rawValue: "applicationDidBecomeActive"), object: nil)
     }
     
     class var sharedInstance: UnityAdsHelper {
@@ -41,7 +41,7 @@ class UnityAdsHelper: NSObject, UnityAdsDelegate {
         Chartboost.cacheInterstitial(CBLocationDefault)
     }
     
-    func showInterstitial(rootViewController: UIViewController) -> Bool {
+    func showInterstitial(_ rootViewController: UIViewController) -> Bool {
         if Chartboost.hasInterstitial(CBLocationDefault) == true {
             Chartboost.showInterstitial(CBLocationDefault)
             return true
@@ -72,7 +72,7 @@ class UnityAdsHelper: NSObject, UnityAdsDelegate {
     // MARK: - UnityAds Delegate Methods
     
     // Video
-    func unityAdsVideoCompleted(rewardItemKey: String!, skipped: Bool) {
+    func unityAdsVideoCompleted(_ rewardItemKey: String!, skipped: Bool) {
         //
     }
     

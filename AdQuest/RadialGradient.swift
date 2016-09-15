@@ -9,11 +9,11 @@
 import Foundation
 
 class RadialGradient: UIView {
-    override func drawRect(rect: CGRect) {
+    override func draw(_ rect: CGRect) {
         let context = UIGraphicsGetCurrentContext()
-        let center = CGPointMake(self.frame.width/2, self.frame.height/2)
-        let gradientRef = CGGradientCreateWithColors(CGColorSpaceCreateDeviceGray(), [UIColor.whiteColor().colorWithAlphaComponent(1).CGColor, UIColor.whiteColor().colorWithAlphaComponent(0).CGColor] as CFArrayRef, [0.0, 1.0])
+        let center = CGPoint(x: self.frame.width/2, y: self.frame.height/2)
+        let gradientRef = CGGradient(colorsSpace: CGColorSpaceCreateDeviceGray(), colors: [UIColor.white.withAlphaComponent(1).cgColor, UIColor.white.withAlphaComponent(0).cgColor] as CFArray, locations: [0.0, 1.0])
         
-        CGContextDrawRadialGradient(context, gradientRef, center, 15, center, self.frame.width/2, CGGradientDrawingOptions.DrawsBeforeStartLocation)
+        context?.drawRadialGradient(gradientRef!, startCenter: center, startRadius: 15, endCenter: center, endRadius: self.frame.width/2, options: CGGradientDrawingOptions.drawsBeforeStartLocation)
     }
 }
