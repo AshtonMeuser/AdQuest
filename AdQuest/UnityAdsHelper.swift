@@ -50,11 +50,10 @@ class UnityAdsHelper: NSObject, UnityAdsDelegate {
     // MARK: - UnityAds Delegate Methods
     
     // Video
-    func unityAdsVideoCompleted(_ rewardItemKey: String!, skipped: Bool) {
+    func unityAdsDidHide() {
         delegate?.completedRewardedVideo()
     }
-    
-    func unityAdsDidHide() {}
+    func unityAdsVideoCompleted(_ rewardItemKey: String!, skipped: Bool) {}
     func unityAdsDidShow() {}
     func unityAdsWillHide() {}
     func unityAdsWillShow() {}
